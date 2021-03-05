@@ -1,0 +1,1 @@
+Hi, this is a simple game of rolling a dice and I created this to practice the DOM.
