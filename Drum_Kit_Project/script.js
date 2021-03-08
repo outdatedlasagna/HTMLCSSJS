@@ -1,12 +1,28 @@
+// detecting button press //
+
 let numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 for (let i = 0; i < numberOfDrumButtons; i++) {
     
-document.querySelectorAll(".drum")[i].addEventListener("click", makeSound);
+document.querySelectorAll(".drum")[i].addEventListener("click", clickFunction);
 
-function makeSound() {
+function clickFunction() {
+    let buttonInnerHTML = this.innerHTML;
+    makeSound(buttonInnerHTML);
+}
+
+// detecting keyboard press //
+
+document.addEventListener("keydown", function(event) {
+
+    makeSound(event.key);
+}
+)
+}
+
+function makeSound(key) {
     
-    switch (this.innerHTML) {
+    switch (key) {
         case "w":
             let crash = new Audio('sounds/crash.mp3');
             crash.play();
@@ -43,14 +59,9 @@ function makeSound() {
             break;
 
         default:
-            console.log(alert("bitch wrong button"));
+            console.log();
     }
-
-// use keypress instead of keydown
-
 }
 
-
-}
 
 
