@@ -11,6 +11,9 @@ function clickFunction() {
     makeSound(buttonInnerHTML);
 }
 
+
+}
+
 // detecting keyboard press //
 
 document.addEventListener("keydown", function(event) {
@@ -18,7 +21,6 @@ document.addEventListener("keydown", function(event) {
     makeSound(event.key);
 }
 )
-}
 
 function makeSound(key) {
     
@@ -59,7 +61,7 @@ function makeSound(key) {
             break;
 
         default:
-            console.log();
+            console.log(buttonInnerHTML);
     }
 }
 
