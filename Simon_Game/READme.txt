@@ -1,1 +1,1 @@
-This game has been created so that jQuery can be practiced.
+This game has been created so that jQuery can be practiced. 
