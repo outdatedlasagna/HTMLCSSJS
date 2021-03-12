@@ -1,0 +1,1 @@
+This is a project that mainly focuses about DOM and jQuery
